@@ -10,7 +10,7 @@ public abstract class Player {
         this.health = health;
         this.coins = 0;
     }
-
+    
     public String getName() {
         return name;
     }
