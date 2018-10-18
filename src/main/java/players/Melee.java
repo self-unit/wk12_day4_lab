@@ -1,6 +1,6 @@
 package players;
 
-import actions.Weapon;
+import items.Weapon;
 import behaviours.IAction;
 
 public abstract class Melee extends Player implements IAction {

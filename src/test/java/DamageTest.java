@@ -1,4 +1,4 @@
-import actions.Weapon;
+import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 

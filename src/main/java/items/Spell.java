@@ -1,6 +1,8 @@
-package actions;
+package items;
 
-public class Spell extends Damage{
+import actions.Damage;
+
+public class Spell extends Damage {
 
     public Spell(String name, int damage){
         super(name, damage);

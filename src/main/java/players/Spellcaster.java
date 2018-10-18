@@ -1,5 +1,5 @@
 package players;
-import actions.Spell;
+import items.Spell;
 import behaviours.IAction;
 
 public abstract class Spellcaster extends Player implements IAction {

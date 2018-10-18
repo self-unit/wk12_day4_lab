@@ -1,6 +1,8 @@
-package actions;
+package items;
 
-public class Familiar extends Defence{
+import actions.Defence;
+
+public class Familiar extends Defence {
 
     public Familiar(String name, int defenceValue) {
         super(name, defenceValue);
