@@ -12,11 +12,17 @@ public class Cleric extends Player implements IAction {
         this.heal = heal;
     }
 
+    @Override
     public void action(IAction actor){
-
+        ((Player) actor).addHealth(heal.getHealingValue());
+        this.addHealth(heal.getHealingValue());
     }
 
     public Heal getHeal() {
         return heal;
+    }
+
+    public void setHeal(Heal healingItem) {
+        this.heal = healingItem;
     }
 }

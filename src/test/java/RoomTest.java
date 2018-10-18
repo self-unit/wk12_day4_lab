@@ -45,4 +45,9 @@ public class RoomTest {
     public void hasActors(){
         assertEquals(3, room1.getActors().size());
     }
+
+    @Test
+    public void hasTreasure(){
+        assertEquals(gold, room2.getTreasure());
+    }
 }

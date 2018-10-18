@@ -8,10 +8,13 @@ import static org.junit.Assert.assertEquals;
 public class BarbarianTest {
     Barbarian barbarian;
     Weapon weapon;
+    Weapon axe;
+
     @Before
     public void before(){
         weapon = new Weapon("Sword", 20);
         barbarian = new Barbarian("Conan", 50, weapon);
+        axe = new Weapon("axe", 50);
     }
 
     @Test
@@ -27,5 +30,11 @@ public class BarbarianTest {
     @Test
     public void hasWeapon(){
         assertEquals(20, barbarian.getWeapon().getDamage());
+    }
+
+    @Test
+    public void canChangeWeapon(){
+        barbarian.setWeapon(axe);
+        assertEquals(axe, barbarian.getWeapon());
     }
 }

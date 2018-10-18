@@ -9,4 +9,12 @@ public class Heal {
         this.name = name;
         this.healingValue = healingValue;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getHealingValue() {
+        return healingValue;
+    }
 }

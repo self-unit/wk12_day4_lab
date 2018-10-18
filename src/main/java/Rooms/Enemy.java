@@ -2,6 +2,7 @@ package Rooms;
 
 import behaviours.IAction;
 import items.Weapon;
+import players.Player;
 
 public class Enemy implements IAction {
 
@@ -15,8 +16,9 @@ public class Enemy implements IAction {
         this.weapon = weapon;
     }
 
+    @Override
     public void action(IAction actor){
-
+        ((Player) actor).addHealth(-weapon.getDamage());
     }
 
 }

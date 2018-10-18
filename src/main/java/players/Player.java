@@ -19,11 +19,15 @@ public abstract class Player {
         return health;
     }
 
+    public void addHealth(int health) {
+        this.health += health;
+    }
+
     public int getCoins() {
         return coins;
     }
 
-    public void setCoins(int coins) {
-        this.coins = coins;
+    public void addCoins(int coins) {
+        this.coins += coins;
     }
 }
