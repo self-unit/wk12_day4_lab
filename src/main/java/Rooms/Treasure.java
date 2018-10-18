@@ -2,16 +2,16 @@ package Rooms;
 
 public class Treasure {
 
-    private String name;
+    private String type;
     private int value;
 
-    public Treasure(String name, int value){
-        this.name = name;
+    public Treasure(String type, int value){
+        this.type = type;
         this.value = value;
     }
 
-    public String getName() {
-        return name;
+    public String getType() {
+        return type;
     }
 
     public int getValue() {

@@ -1,4 +1,4 @@
 package players;
 
-public class Cleric extends Player {
-}
+//public class Cleric extends Player {
+//}

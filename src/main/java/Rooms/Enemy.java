@@ -1,11 +1,22 @@
 package Rooms;
 
 import behaviours.IAction;
-import players.Melee;
+import items.Weapon;
 
-public class Enemy extends Melee implements IAction {
+public class Enemy implements IAction {
 
-    public Enemy() {
+    private String type;
+    private int health;
+    private Weapon weapon;
+
+    public Enemy(String type, int health, Weapon weapon) {
+        this.type = type;
+        this.health = health;
+        this.weapon = weapon;
+    }
+
+    public void action(IAction actor){
 
     }
+
 }

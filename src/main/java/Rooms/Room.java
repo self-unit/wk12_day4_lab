@@ -2,20 +2,27 @@ package Rooms;
 
 import behaviours.IAction;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Room {
 
-    private LinkedList<IAction> actors;
+    private ArrayList<IAction> actors;
     private Treasure treasure;
 
-    public Room(LinkedList<IAction> actors, Treasure treasure) {
+    public Room(ArrayList<IAction> actors, Treasure treasure) {
         this.actors = actors;
         this.treasure = treasure;
     }
 
-    public Room(LinkedList<IAction> actors) {
+    public Room(ArrayList<IAction> actors) {
         this.actors = actors;
     }
 
+    public ArrayList<IAction> getActors() {
+        return actors;
+    }
+
+    public Treasure getTreasure() {
+        return treasure;
+    }
 }
