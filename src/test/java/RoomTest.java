@@ -7,7 +7,7 @@ import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 import players.Dwarf;
-import players.Player;
+import players.Wizard;
 
 import java.util.ArrayList;
 
@@ -33,13 +33,16 @@ public class RoomTest {
         player1 = new Dwarf("Grendle", 150, sword);
         player2 = new Wizard("Gandalf", 100, fireball);
         enemy = new Enemy("Troll", 100, sword);
-        actors = new ArrayList<IAction>(player1, player2, enemy);
+        actors = new ArrayList<>();
+        actors.add(player1);
+        actors.add(player2);
+        actors.add(enemy);
         room1 = new Room(actors);
         room2 = new Room(actors, gold);
     }
 
     @Test
     public void hasActors(){
-        assertEquals(3, room1.getActors());
+        assertEquals(3, room1.getActors().size());
     }
 }

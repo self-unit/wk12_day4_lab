@@ -14,4 +14,8 @@ public abstract class Spellcaster extends Player implements IAction {
     public void action(IAction actor) {
 
     }
+
+    public Spell getSpell() {
+        return spell;
+    }
 }
