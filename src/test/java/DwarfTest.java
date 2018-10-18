@@ -17,10 +17,14 @@ public class DwarfTest {
     @Test
     public void hasName(){
         assertEquals("Sneezy", dwarf.getName());
-    }    @Test
+    }
+
+    @Test
     public void hasHealth(){
         assertEquals(50, dwarf.getHealth());
     }
+
+    @Test
     public void hasWeapon(){
         assertEquals("Sword", dwarf.getWeapon().getName());
     }

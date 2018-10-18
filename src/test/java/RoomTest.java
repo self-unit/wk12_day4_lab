@@ -6,6 +6,7 @@ import items.Spell;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
+import players.Dwarf;
 import players.Player;
 
 import java.util.ArrayList;

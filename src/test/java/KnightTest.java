@@ -17,10 +17,14 @@ public class KnightTest {
     @Test
     public void hasName(){
         assertEquals("Dark Knight", knight.getName());
-    }    @Test
+    }
+
+    @Test
     public void hasHealth(){
         assertEquals(50, knight.getHealth());
     }
+
+    @Test
     public void hasWeapon(){
         assertEquals("Sword", knight.getWeapon().getName());
     }

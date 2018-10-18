@@ -17,10 +17,14 @@ public class BarbarianTest {
     @Test
     public void hasName(){
         assertEquals("Conan", barbarian.getName());
-    }    @Test
+    }
+
+    @Test
     public void hasHealth(){
         assertEquals(50, barbarian.getHealth());
     }
+
+    @Test
     public void hasWeapon(){
         assertEquals(20, barbarian.getWeapon().getDamage());
     }
