@@ -15,4 +15,8 @@ public abstract class Melee extends Player implements IAction {
     public void action(IAction actor) {
 
     }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
 }
